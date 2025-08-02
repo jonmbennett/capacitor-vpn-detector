@@ -26,8 +26,23 @@ npx cap sync
 isVpnActive() => Promise<{ value: boolean; }>
 ```
 
+Check if VPN is currently active on the device
+
 **Returns:** <code>Promise&lt;{ value: boolean; }&gt;</code>
+
+**Since:** 1.0.0
 
 --------------------
 
 </docgen-api>
+
+## Usage
+
+```typescript
+import { VpnDetectorPlugin } from 'capacitor-vpn-detector';
+
+const checkVpn = async () => {
+  const result = await VpnDetectorPlugin.isVpnActive();
+  console.log('VPN is active:', result.value);
+};
+```
