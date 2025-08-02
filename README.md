@@ -37,10 +37,10 @@ Check if VPN is currently active on the device
 ## Usage
 
 ```typescript
-import { VpnDetectorPlugin } from 'capacitor-vpn-detector';
+import { VpnDetector } from 'capacitor-vpn-detector';
 
 const checkVpn = async () => {
-  const result = await VpnDetectorPlugin.isVpnActive();
+  const result = await VpnDetector.isVpnActive();
   console.log('VPN is active:', result.value);
 };
 ```
