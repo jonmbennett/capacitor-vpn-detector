@@ -1,8 +1,8 @@
 import { registerPlugin } from '@capacitor/core';
 
-import type { VpnDetectorPlugin } from './definitions';
+import type { VpnDetector } from './definitions';
 
-const VpnDetector = registerPlugin<VpnDetectorPlugin>('VpnDetectorPlugin', {
+const VpnDetector = registerPlugin<VpnDetector>('VpnDetectorPlugin', {
   web: () => import('./web').then((m) => new m.VpnDetectorWeb()),
 });
 

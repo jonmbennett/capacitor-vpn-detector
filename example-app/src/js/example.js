@@ -1,8 +1,8 @@
-import { VpnDetectorPlugin } from 'capacitor-vpn-detector';
+import { VpnDetector } from 'capacitor-vpn-detector';
 
 window.testVpnDetection = async () => {
     try {
-        const result = await VpnDetectorPlugin.isVpnActive();
+        const result = await VpnDetector.isVpnActive();
         const resultElement = document.getElementById("vpnResult");
         resultElement.textContent = `VPN is ${result.value ? 'active' : 'not active'}`;
         resultElement.style.color = result.value ? 'red' : 'green';
