@@ -1,6 +1,6 @@
 {
   "name": "capacitor-vpn-detector",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Capacitor plugin to detect VPN connections on Android and iOS.",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
