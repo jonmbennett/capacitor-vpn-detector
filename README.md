@@ -30,8 +30,6 @@ Check if VPN is currently active on the device
 
 **Returns:** <code>Promise&lt;{ value: boolean; }&gt;</code>
 
-**Since:** 1.0.0
-
 --------------------
 
 </docgen-api>
